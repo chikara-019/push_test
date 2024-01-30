@@ -1,0 +1,49 @@
+section.item.skeleton {
+    .title, .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        span {
+            background-color: #DEE1E2;
+            border-radius: 20px;
+        }
+    }
+
+    .title {
+        margin: 4px 0 20px;
+        height: 20px;
+        gap: 10px;
+
+        &:before, &:after {
+            content: '';
+            background-color: #DEE1E2;
+            border-radius: 20px;
+        }
+
+        &:before {width: 15%;}
+        &:after {width: 40%;}
+    }
+
+    .content {
+        gap: 12px;
+
+        span {
+            height: 10px;
+
+            &:nth-child(1) {width: 50%;}
+            &:nth-child(2) {width: 20%;}
+            &:nth-child(3) {width: 25%;}
+            &:nth-child(4) {width: 25%;}
+            &:nth-child(5) {width: 15%;}
+            &:nth-child(6) {width: 45%;}
+        }
+    }
+
+    &.variant-2 {
+        .title {
+            &:before {width: 35%;}
+            &:after {width: 10%;}
+        }
+    }
+}

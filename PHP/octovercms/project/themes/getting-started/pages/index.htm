@@ -1,0 +1,46 @@
+url = "/"
+title = "Welcome to October CMS!"
+
+[backendLink]
+==
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="October CMS">
+        <meta name="author" content="October CMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+
+        <link href="{{ ['assets/less/theme.less']|theme }}" rel="stylesheet">
+        <script src="{{ 'assets/javascript/index.js'|theme }}"></script>
+
+        <title>{{ this.page.title }}</title>
+    </head>
+    <body>
+        <div class="demo-content-container">
+            <img class="october-logo" src="{{ 'assets/images/october-logo.svg'|theme }}" alt="October CMS"">
+
+            <div class="document">
+                <section class="intro">
+                    <h1>helloooooooooooooooooo</h1>
+                    <p>Welcome to October CMS! This simple theme demonstrates some of the platform's basic features and provides an easy way to get started with October CMS. You'll have the option to enable our full-featured demo theme in just a few minutes!</p>
+                </section>
+
+                <section class="item started" data-step="1" id="item-1">
+                    <h2>Watch a Short Video Tourooooooooooooooooooooooooo</h2>
+
+                    <p>To help you get started, we've created a quick tour video that will give you an overview of the Administration Area and basic content management features.</p>
+
+                    <a href="https://youtu.be/pqPc--bWj2w" id="tour-btn" target="_blank" class="cta">Watch the Video Tour</a>
+                </section>
+
+                {% partial "step-2" %}
+
+                
+                {% partial "step-3" %}
+               
+            </div>
+        </div>
+    </body>
+</html>

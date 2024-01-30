@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.balance {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 50%;
+}
+
+.balance h3 {
+    margin-top: 0;
+}
+
+.balance table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.balance th,
+.balance td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.balance td {
+    border-top: 1px solid #ccc;
+}
+
+.balance tbody tr:nth-child(odd) {
+background: #f2f2f2;
+}
+
+.add-balance {
+    width: 100%;
+    max-width: 20%;
+    margin-left: 50px;
+}
+
+.add-balance h3 {
+    margin-top: 0;
+}
+
+.add-balance form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-balance .form-group {
+    margin-bottom: 10px;
+}
+
+.add-balance label {
+    font-weight: bold;
+}
+
+.add-balance input, .add-balance select {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.add-balance button {
+    padding: 8px 16px;
+    background-color: mediumaquamarine;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.error {
+    color:  tomato;
+}
+
+.flash_message {
+    background-color: aquamarine;
+    opacity: 0.4;
+    color: darkgreen;
+
+};
+
+.flash_error_message {
+    background-color:tomato;
+    opacity:0.6;
+    color: rgb(59, 0, 0);
+}

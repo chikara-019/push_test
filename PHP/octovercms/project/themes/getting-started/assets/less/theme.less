@@ -1,0 +1,146 @@
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+    @import "item-skeleton";
+
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 60px 20px;
+    background-color: #F9FBFC;
+    color: #2C3E4F;
+    line-height: 150%;
+
+    @media (max-width: 768px) {
+        padding: 40px 20px;
+    }
+
+    .demo-content-container {
+        max-width: 700px;
+        min-width: 300px;
+        margin: 0 auto;
+
+        .october-logo {
+            width: 250px;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .document {
+            background: #FFFFFF;
+            border: 1px solid #ECF0F1;
+            box-shadow: 0 3px 5px 0 rgba(0,0,0,0.04);
+            border-radius: 10px;
+            padding: 40px 0 0 0;
+
+            h1, h2, p {
+                padding: 0;
+                margin: 0 0 20px 0;
+            }
+
+            h1 {
+                margin-bottom: 40px;
+                font-size: 22px;
+                font-weight: 700;
+                position: relative;
+                padding-left: 48px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -4px;
+                    width: 35px;
+                    height: 35px;
+                    background: url("/themes/getting-started/assets/images/october-header-icon.png") no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            h2 {
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            a.cta {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-top: 20px;
+                background-color: #7065FF;
+                color: white;
+                border-radius: 30px;
+                font-weight: 600;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #5B4EDD;
+                }
+            }
+
+            code {
+                background-color: #F2F4F5;
+                padding: 5px;
+                margin: 0 2px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            section {
+                padding: 0 30px;
+
+                &.hidden {
+                    display: none;
+                }
+
+                &.item {
+                    padding: 30px 30px 30px 70px;
+                    position: relative;
+                    border-top: #DDE0E2 1px solid;
+
+                    p:last-of-type {
+                        margin-bottom: 0;
+                    }
+
+                    &:before {
+                        position: absolute;
+                        content: attr(data-step);
+                        width: 28px;
+                        height: 28px;
+                        left: 30px;
+                        border-radius: 100%;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: center;
+                        border: 2px solid #BDC3C7;
+                        box-sizing: border-box;
+                        color: #BDC3C7;
+                    }
+
+                    &.started {
+                        &:before {
+                            background-color: #BDC3C7;
+                            color: white;
+                        }
+                    }
+
+                    &.completed {
+                        &:before {
+                            content: '';
+                            background: url("/themes/getting-started/assets/images/completed-item.png") no-repeat;
+                            background-size: contain;
+                            border: none;
+                        }
+
+                        a.cta {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
